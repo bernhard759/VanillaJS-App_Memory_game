@@ -67,11 +67,9 @@ div.tiles-box {
 
 .tile[data-revealed="true"] {
   cursor: default;
-  transform: rotateY(180deg);
   animation: 1s ease-in-out 800ms forwards matching;
-  opacity: 0.8;
-  transition: opacity 500ms;
 }
+
 
 @keyframes matching {
   0% {
