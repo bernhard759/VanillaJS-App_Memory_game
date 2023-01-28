@@ -2,7 +2,7 @@
     "name": "bird memory game app",
     "short_name": "memory game",
     "description": "play a memory game with bird tiles",
-    "start_url": "./",
+    "start_url": "/VanillaJS-App_Memory_game/",
     "id": "/VanillaJS-App_Memory_game/",
     "background_color": "whitesmoke",
     "theme_color": "steelblue",
