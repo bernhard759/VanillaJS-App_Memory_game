@@ -5,6 +5,15 @@ self.addEventListener("install", (e) => {
     caches.open("static").then((cache) => {
       return cache.addAll([
         "./",
+        "./index.html",
+        "./src/css/style.css",
+        "./src/js/script.js",
+        "./img/icons8-crane-bird-96.png",
+        "./img/icons8-parakeet-96.png",
+        "./img/icons8-parrot-96.png",
+        "./img/icons8-pelican-96.png",
+        "./img/icons8-woodpecker-96.png",
+        "./img/memory-game.png",
       ]);
     })
   );
