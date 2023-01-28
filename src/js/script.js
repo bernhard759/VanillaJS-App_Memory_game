@@ -3,11 +3,11 @@ const tileContainer = document.querySelector(".tiles");
 
 // Animal icons
 const icons = {
-  crane: "./img/icons8-crane-bird-96.png",
-  parakeet: "./img/icons8-parakeet-96.png",
-  parrot: "./img/icons8-parrot-96.png",
-  pelican: "./img/icons8-pelican-96.png",
-  woodpecker: "./img/icons8-woodpecker-96.png",
+  "crane": "./img/icons8-crane-bird-96.png",
+  "parakeet": "./img/icons8-parakeet-96.png",
+  "parrot": "./img/icons8-parrot-96.png",
+  "pelican": "./img/icons8-pelican-96.png",
+  "woodpecker": "./img/icons8-woodpecker-96.png",
 };
 
 // Helper variables
@@ -83,7 +83,7 @@ function buildTile(icon) {
           if (!alert("The memory game is completed :)")) {
             window.location.reload();
           }
-        }, 500);
+        }, 1000);
       }
     } else {
       // Attempt to match

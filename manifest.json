@@ -1,0 +1,27 @@
+{
+    "name": "bird memory game app",
+    "short_name": "memory game",
+    "description": "play a memory game with bird tiles",
+    "start_url": "./",
+    "id": "/Memory_game/",
+    "background_color": "whitesmoke",
+    "theme_color": "steelblue",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "img/memory128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "img/memory256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "img/memory512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

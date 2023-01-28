@@ -5,9 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <!-- PWA meta theme color -->
+    <meta name="theme-color" content="lightblue">
+    <title>Bird memory game &#128038;</title>
+    <!-- Link the manifest -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Touch icon -->
+    <link rel="apple-touch-icon" href="img/memory128.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- JS -->
+    <script src="src/js/script.js" defer></script>
 </head>
 
 <body>
@@ -21,6 +29,19 @@
             <div class="tiles"></div>
         </div>
     </div>
+
+    <!-- Register Service worker -->
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("sw.js").then(registration => {
+                console.log("SW registered", registration)
+            }).catch((error) => {
+                console.log("SW Registration did not work", error)
+            })
+        } else {
+            console.warn("Service Worker not supported")
+        }
+    </script>
 </body>
 
 </html>
