@@ -3,7 +3,7 @@ self.addEventListener("install", e => {
     // wait until resources are cached
     e.waitUntil(
         caches.open("static").then( cache => {
-            return cache.addAll(["./", "./src/css/style.css", "./img"]);
+            return cache.addAll(["./", "./src/css/style.css", "./src/js/script.js", "./img"]);
         })
     )
 });
